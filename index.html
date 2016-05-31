@@ -9,6 +9,7 @@
         <!-- <script src="http://polygit.org/components/webcomponentsjs/webcomponents-lite.min.js" async></script> -->
 
         <link href="http://polygit.org/components/paper-material/paper-material.html" rel="import">
+        <link rel="import" href="http://polygit.org/components/marked-element/marked-element.html">
         <!-- 
         <link href="http://polygit.org/components/iron-collapse/iron-collapse.html" rel="import">
         <link href="http://polygit.org/components/paper-button/paper-button.html" rel="import">
@@ -53,7 +54,10 @@
 
     <body>
         <paper-material elevation="3" class="container">
-            Yay, Polymer is up and running...
+            <h1>Welcome</h1>
+            <marked-element markdown="`Markdown` is _awesome_!">
+                <div class="markdown-html"></div>
+            </marked-element>
         </paper-material>
 
     </body>
