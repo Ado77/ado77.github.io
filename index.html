@@ -5,6 +5,10 @@
         <title>Bur.land</title>
         <meta charset="utf-8">
 
+        <script type="module">
+            import polymerPolymer from 'https://cdn.skypack.dev/@polymer/polymer';
+        </script>
+
         <link href="//polygit.org/components/polymer/polymer.html" rel="import">
         <!-- <script src="//polygit.org/components/webcomponentsjs/webcomponents-lite.min.js" async></script> -->
 
@@ -36,18 +40,6 @@
         }
         </style>
 
-        <script>
-        var webComponentsSupported = ('registerElement' in document && 'import' in document.createElement('link') && 'content' in document.createElement('template'));
-
-        if (!webComponentsSupported) {
-            var script = document.createElement('script');
-            script.src = '//polygit.org/components/webcomponentsjs/webcomponents-lite.min.js';
-            script.setAttribute('async', true);
-            document.head.appendChild(script);
-        } else {
-            // finishLazyLoading();
-        }
-        </script>
     </head>
 
     <body>
